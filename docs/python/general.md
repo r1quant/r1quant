@@ -223,6 +223,124 @@ import httpx
 r = httpx.get('https://www.example.org/')
 ```
 
+## If-Elif Chains
+
+```python
+def export_data(data:Data, format:str) -> None:
+  if format == 'pdf":
+    export_pdf(data)
+  elif format == 'csv': 
+    export_csv(data)
+  elif format == 'json': 
+    export_json(data)
+  else
+    raise ValueError("...")
+```
+
+Solution: using dict 
+
+```python
+from typing import Any, Callable
+
+type Data = dict[str, Any]
+type ExportFn = Callable[[Data], None]
+
+exporters: dict[str, ExportFn] = {
+    "pdf": export_pdf,
+    "csv": export_csv,
+    "json": export_json,
+}
+
+def export_data(data:Data, format:str) -> None:
+  export = exporters.get(format)
+  if exporter is None:
+    raise ValueError("...")
+  exporter(data)
+```
+
+Solution: using register/decorator  
+
+```python
+from typing import Any, Callable
+from functools import wraps
+
+type Data = dict[str, Any]
+type ExportFn = Callable[[Data], None]
+
+exporters: dict[str, ExportFn] = {}
+
+def register_exporter(format:str) -> Callable[[ExportFn], ExportFn]:
+    def decorator(fn: ExportFn) -> ExportFn:
+        @wraps(fn)
+        def wrapper(data:Data) -> None:
+            return fn(data)
+        
+        exporters[format] = wrapper
+        return wrapper
+    return decorator
+
+@register_exporter("pdf")
+def export_pdf(data:Data) -> None:
+    print("exporting pdf")
+
+@register_exporter("csv")
+def export_csv(data:Data) -> None:
+    print("exporting csv")
+
+def export_data(data:Data, format:str) -> None:
+  export = exporters.get(format)
+  if exporter is None:
+    raise ValueError("...")
+  exporter(data)
+```
+
+
+## Magic Methods in Python
+
+```python
+
+class MyClass:
+    #-- initialization 
+    def __new__(cls) # Called to create a new instance
+    def __init__(self) # Called to initialize the instance
+    def __del__(self) # Called when the instance is about to be destroyed 
+
+    #-- representation
+    def __str__(self) # Called by str() or print() to get a readble string representation
+    def __repr__(self) # Called by repr() to get an unambiguous string representantion
+    def __format__(self, format_spec) # Called by format() and f-strings
+    def __bytes__(self) # Called by bytes()
+
+    #-- numeric operations
+    # neg, pos, abs, invert, round
+    # floor, ceil trunc
+    
+    #-- arithmetic operations
+    # add, radd, sub, rsub, mul, rmul, truediv, rtruediv
+    # floordiv, rfloordiv, mod, rmod, divmod, pow, rpow
+
+    #-- augmented assignment
+    # iadd, isub, imul # in-place operation (+=, -=, *=)
+
+    #-- comparaions operations
+    # eq, ne, lt, le, gt, ge, hash
+
+    #-- attributes access
+    # getattr, getattribute, setattr, delattr
+
+    #-- container and collection method
+    # len, getitem, setitem, delitem, iter, reversed, contains
+
+    #-- type conversion
+    # int, float, complex, bool, index
+
+    #-- callable and context management
+    def __call__(self) # Allows the instances to be called like a function
+    def __enter__(self) # Called when entering a with block
+    def __exit__(self, exc_type, exc_value, traceback) # Called when exiting a with block 
+
+```
+
 
 --- 
 
@@ -233,3 +351,5 @@ r = httpx.get('https://www.example.org/')
 - [Let’s Replace All For Loops With Map and Filter Repository](https://github.com/ArjanCodes/examples/blob/main/2025/map/basic_example.py)
 - [15 Python Libraries You Should Know About Video](https://www.youtube.com/watch?v=o06MyVhYte4)
 - [Is None vs None](https://jaredgrubb.blogspot.com/2009/04/python-is-none-vs-none.html)
+- [I Hate Long If-Elif Chains: This Design Pattern Solved It Once and For All](https://www.youtube.com/watch?v=g7EGMWvJ1fI)
+- [A Guide to Python's Magic Methods](https://rszalski.github.io/magicmethods/)
