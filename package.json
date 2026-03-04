@@ -1,0 +1,13 @@
+{
+  "name": "@r1quant/r1quant",
+  "version": "1.0.0",
+  "description": "blog",
+  "private": true,
+  "author": "r1quant",
+  "scripts": {
+    "dev": "docsify serve docs"
+  },
+  "devDependencies": {
+    "docsify-cli": "^4.4.4"
+  }
+}
