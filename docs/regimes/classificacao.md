@@ -1116,44 +1116,44 @@ Quando múltiplos ativos são monitorados simultaneamente, a combinação de reg
 
 **Equity + VIX:**
 
-| SPX Regime | VIX Regime | Interpretação | Convicção |
-|------------|------------|---------------|-----------|
-| Trending Up | Trending Down | Coerente — rally saudável | Alta |
-| Trending Up | Ranging/Low Vol | Coerente — complacência (cuidado se excessiva) | Média-Alta |
-| Trending Up | Trending Up | DIVERGENTE — risco oculto subindo apesar do rally | Baixa (reduzir) |
-| Trending Down | Trending Up | Coerente — sell-off com medo | Alta (para short) |
-| Ranging | Low Vol | Coerente — mercado dormindo | Média |
-| Recovery | Trending Down (VIX) | Coerente — medo dissipando | Alta |
-| Distribution | Low Vol (VIX) | Perigoso — complacência no topo | Muito Baixa |
+| SPX Regime    | VIX Regime          | Interpretação                                     | Convicção         |
+| ------------- | ------------------- | ------------------------------------------------- | ----------------- |
+| Trending Up   | Trending Down       | Coerente — rally saudável                         | Alta              |
+| Trending Up   | Ranging/Low Vol     | Coerente — complacência (cuidado se excessiva)    | Média-Alta        |
+| Trending Up   | Trending Up         | DIVERGENTE — risco oculto subindo apesar do rally | Baixa (reduzir)   |
+| Trending Down | Trending Up         | Coerente — sell-off com medo                      | Alta (para short) |
+| Ranging       | Low Vol             | Coerente — mercado dormindo                       | Média             |
+| Recovery      | Trending Down (VIX) | Coerente — medo dissipando                        | Alta              |
+| Distribution  | Low Vol (VIX)       | Perigoso — complacência no topo                   | Muito Baixa       |
 
 **Equity + Credit (HYG/JNK):**
 
-| SPX Regime | HYG Regime | Interpretação |
-|---|---|---|
-| Trending Up | Trending Up | Coerente — risk-on amplo |
-| Trending Up | Trending Down | DIVERGENTE — crédito não confirma; risco de reversão |
-| Trending Up | Distribution | ALERTA — smart money saindo de crédito antes de equities |
-| Crisis | Crisis | Coerente — contágio pleno |
-| Recovery | Trending Up | Coerente — crédito liderando a recuperação (bullish) |
-| Recovery | Ranging | Crédito ainda cético — recovery frágil |
+| SPX Regime  | HYG Regime    | Interpretação                                            |
+| ----------- | ------------- | -------------------------------------------------------- |
+| Trending Up | Trending Up   | Coerente — risk-on amplo                                 |
+| Trending Up | Trending Down | DIVERGENTE — crédito não confirma; risco de reversão     |
+| Trending Up | Distribution  | ALERTA — smart money saindo de crédito antes de equities |
+| Crisis      | Crisis        | Coerente — contágio pleno                                |
+| Recovery    | Trending Up   | Coerente — crédito liderando a recuperação (bullish)     |
+| Recovery    | Ranging       | Crédito ainda cético — recovery frágil                   |
 
 **USD + Emerging Markets:**
 
-| DXY Regime | EEM Regime | Interpretação |
-|---|---|---|
-| Trending Up | Trending Down | Coerente — USD forte pressiona emergentes |
-| Trending Down | Trending Up | Coerente — USD fraco beneficia emergentes |
-| Trending Up | Trending Up | DIVERGENTE — emergentes subindo apesar do USD forte; momentum muito forte |
-| Crisis (DXY spike) | Crisis | Coerente — flight to quality |
+| DXY Regime         | EEM Regime    | Interpretação                                                             |
+| ------------------ | ------------- | ------------------------------------------------------------------------- |
+| Trending Up        | Trending Down | Coerente — USD forte pressiona emergentes                                 |
+| Trending Down      | Trending Up   | Coerente — USD fraco beneficia emergentes                                 |
+| Trending Up        | Trending Up   | DIVERGENTE — emergentes subindo apesar do USD forte; momentum muito forte |
+| Crisis (DXY spike) | Crisis        | Coerente — flight to quality                                              |
 
 **Treasuries + Equities:**
 
-| TLT Regime | SPX Regime | Interpretação |
-|---|---|---|
-| Trending Up | Trending Down | Coerente — flight to quality clássico |
-| Trending Up | Trending Up | Risk-on com queda de yields — cenário Goldilocks |
+| TLT Regime    | SPX Regime    | Interpretação                                                        |
+| ------------- | ------------- | -------------------------------------------------------------------- |
+| Trending Up   | Trending Down | Coerente — flight to quality clássico                                |
+| Trending Up   | Trending Up   | Risk-on com queda de yields — cenário Goldilocks                     |
 | Trending Down | Trending Down | PERIGOSO — stocks e bonds caindo juntos (stagflation, taper tantrum) |
-| Trending Down | Trending Up | Reflação — yields subindo por crescimento forte |
+| Trending Down | Trending Up   | Reflação — yields subindo por crescimento forte                      |
 
 ### Índice de Coerência do Portfólio
 
