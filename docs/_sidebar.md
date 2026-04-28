@@ -11,3 +11,6 @@
   - [Roteiro de Estudo (curto)](/regimes/roteiro-curto.md)
 - Others
   - [Github Workflow](/others/github-workflow.md)
+- Prompts
+  - [Base](/prompts/base.md)
+  - [Quant Researcher](/prompts/quant_researcher.md)
