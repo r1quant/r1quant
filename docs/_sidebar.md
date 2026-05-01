@@ -1,6 +1,6 @@
 
-* [Home](/)
-- [Python](general.md)
+* [Home](/home.md)
+- [Python](/python/general.md)
   - [General](/python/general.md)
   - [Pandas](/python/pandas.md)
 - [Market Regimes](/regimes/classificacao.md)
