@@ -14,9 +14,9 @@
 - Books
   - [The Art of Quantitative Finance Vol2](/books/the_art_of_quantitative_finance.md)
 - Articles
-  - [The ML Algorithms Guide Nobody Asked For](/books/the_ml_algorithms_guide_nobody_asked.md)
+  - [The ML Algorithms Guide Nobody Asked For](/articles/the_ml_algorithms_guide_nobody_asked.md)
 - Papers
-  - [An Explicit Solution to Black–Scholes Implied Volatility](/books/an_explicit_solution_to_black_scholes_implied_volatiliy.md)
+  - [An Explicit Solution to Black–Scholes Implied Volatility](/papers/an_explicit_solution_to_black_scholes_implied_volatiliy.md)
 - Prompts
   - [Base](/prompts/base.md)
   - [Quant Researcher](/prompts/quant_researcher.md)
