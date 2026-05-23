@@ -13,6 +13,8 @@
   - [Github Workflow](/others/github-workflow.md)
 - Books
   - [The Art of Quantitative Finance Vol2](/books/the_art_of_quantitative_finance.md)
+- Articles
+  - [The ML Algorithms Guide Nobody Asked For](/books/the_ml_algorithms_guide_nobody_asked.md.md)
 - Prompts
   - [Base](/prompts/base.md)
   - [Quant Researcher](/prompts/quant_researcher.md)
