@@ -90,7 +90,7 @@ A primeira parte conduz o leitor por uma progressão lógica: parte da medida hi
 
 --- 
 
-
+# Part 2 — "Extensions of the Black-Scholes Theory to Other Types of Options"
 
 ## Opções de câmbio (FX) — seção 2.2
 
@@ -145,6 +145,8 @@ A seção 2.30 enuncia a fórmula de Black-Scholes multi-ativo (Teorema 2.17), e
 O Capítulo 2 é essencialmente um catálogo de **ferramentas de avaliação** (o segundo termo do subtítulo do livro). A lógica é progressiva: começa adaptando Black-Scholes a subjacentes "diferentes" mas ainda simples (câmbio, futuros) via o truque do rendimento contínuo q; passa às opções americanas, onde a fórmula fechada cede lugar à backwardation provada por arbitragem; chega às exóticas, cuja complexidade combinatória motiva o método de Monte Carlo; e dedica metade do capítulo a dominar Monte Carlo — sua taxa de erro 1/√N, suas variantes QMC e de redução de variância — culminando nas opções multi-ativo e na decomposição de Cholesky. O estilo permanece intuitivo e empírico, com exemplos reais (Commerzbank, Interactive Brokers) e remissões constantes ao software do autor (app.lsqf.org). O capítulo deixa explicitamente em aberto dois temas — opções americanas path-dependent e derivativos de taxa de juros — que serão retomados no Capítulo 3.
 
 --- 
+
+# Part 3 - "Fundamentals: Stochastic Analysis and Applications, Interest Rate Dynamics, and Basic Principles of Pricing Interest Rate Derivatives"
 
 ## Por que modelar juros é diferente — seções 3.1 e 3.2
 
