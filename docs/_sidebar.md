@@ -17,6 +17,7 @@
   - [The ML Algorithms Guide Nobody Asked For](/articles/the_ml_algorithms_guide_nobody_asked.md)
 - Papers
   - [An Explicit Solution to Black–Scholes Implied Volatility](/papers/an_explicit_solution_to_black_scholes_implied_volatiliy.md)
+  - [Microstructural Foundation of Rough Log-Normal Volatility Models](/papers/microstructural_foundation_of_rough_log-normal_volatility_models.md)
 - Prompts
   - [Base](/prompts/base.md)
   - [Quant Researcher](/prompts/quant_researcher.md)
