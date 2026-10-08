@@ -3,6 +3,7 @@
 - [Python](/python/general.md)
   - [General](/python/general.md)
   - [Pandas](/python/pandas.md)
+- [Quant](/quant/base.md)
 - [Market Regimes](/regimes/classificacao.md)
   - [Complemento 1](/regimes/classificacao_complemento.md)
   - [Complemento 2](/regimes/classificao_papers.md.md)
